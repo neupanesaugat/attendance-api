@@ -10,7 +10,7 @@ const router = express.Router();
 
 //* register user
 router.post(
-  '/user/register',
+  '/register',
   //? validate user
   validationReqBody(userValidationSchema),
 
@@ -38,7 +38,7 @@ router.post(
 
 //* login user
 router.post(
-  '/user/login',
+  '/login',
 
   validationReqBody(loginUserValidationSchema),
   async (req, res) => {

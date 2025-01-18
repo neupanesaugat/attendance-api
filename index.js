@@ -11,7 +11,7 @@ app.use(express.json());
 await connectDB();
 
 //? register routes
-app.use(userRoutes);
+app.use('/user', userRoutes);
 
 //? assigning port
 const PORT = process.env.PORT;
